@@ -1,0 +1,394 @@
+/* ...existing code... */
+
+/* Certifications Page Styles */
+.certifications {
+    padding: 60px 0;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    margin: 0 5px 10px;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #0070f3;
+    color: white;
+    border-color: #0070f3;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.cert-card {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cert-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.cert-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cert-info {
+    padding: 20px;
+}
+
+.cert-info h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.issuer, .date {
+    margin: 5px 0;
+    color: #666;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #e9f5ff;
+    color: #0070f3;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.view-cert-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #0070f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.view-cert-btn:hover {
+    background: #005cd9;
+}
+
+/* Skills Page Styles */
+.skills {
+    padding: 60px 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-category h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0070f3;
+    padding-bottom: 10px;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.skill-bar {
+    height: 10px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: #0070f3;
+    border-radius: 5px;
+}
+
+/* Resume Page Styles */
+.resume-page {
+    padding: 60px 0;
+}
+
+.resume-actions {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0070f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #005cd9;
+}
+
+.resume-content {
+    background: white;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.resume-section {
+    margin-bottom: 40px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px solid #0070f3;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.resume-item {
+    margin-bottom: 25px;
+}
+
+.resume-item-header {
+    margin-bottom: 10px;
+}
+
+.resume-item-header h3 {
+    margin: 0 0 5px 0;
+}
+
+.company, .institution, .date {
+    display: block;
+    color: #666;
+}
+
+.date {
+    font-style: italic;
+}
+
+.resume-item-details {
+    padding-left: 20px;
+}
+
+.resume-item-details li {
+    margin-bottom: 5px;
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.strength-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #0070f3;
+}
+
+.strength-item h3 {
+    margin-top: 0;
+    color: #0070f3;
+}
+
+/* Index Page Preview Sections */
+.section-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    text-align: center;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.see-more-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.see-more-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #0070f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background: #005cd9;
+}
+
+/* Skills Preview Section */
+.skills-preview {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+.skills-highlight {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.skill-preview-item {
+    margin-bottom: 15px;
+}
+
+.skill-preview-name {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.skill-preview-bar {
+    height: 10px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-preview-level {
+    height: 100%;
+    background: #0070f3;
+    border-radius: 5px;
+}
+
+/* Certifications Preview Section */
+.certs-preview {
+    padding: 60px 0;
+}
+
+.certs-highlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cert-preview-card {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cert-preview-image {
+    height: 160px;
+    overflow: hidden;
+}
+
+.cert-preview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cert-preview-info {
+    padding: 15px;
+}
+
+.cert-preview-info h3 {
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Strengths Preview Section */
+.strengths-preview {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+.strengths-highlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.strength-preview-item {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 3px solid #0070f3;
+}
+
+.strength-preview-item h3 {
+    margin-top: 0;
+    color: #0070f3;
+    margin-bottom: 10px;
+}
+
+.strength-preview-item p {
+    margin: 0;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-row, 
+    .certs-highlight, 
+    .strengths-highlight {
+        grid-template-columns: 1fr;
+    }
+    
+    .cert-preview-image {
+        height: 140px;
+    }
+}
+
+/* ...existing code... */
