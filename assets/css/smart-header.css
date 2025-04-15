@@ -1,0 +1,43 @@
+/* Smart header styles */
+.has-smart-header {
+    padding-top: 60px; /* Add padding to account for fixed header height */
+}
+
+/* Smart Header Styles */
+#fh5co-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #222;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Class to hide the nav when scrolling down */
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
+/* Class to show the nav when scrolling up */
+.nav-visible {
+    transform: translateY(0);
+}
+
+/* Add padding to the top of the page to account for the fixed nav */
+body {
+    padding-top: 60px; /* Adjust based on your nav height */
+}
+
+/* Make sure first section has proper spacing */
+section:first-of-type, 
+.fh5co-project:first-of-type,
+#fh5co-header {
+    margin-top: 0;
+}
+
+/* Fix for main content positioning */
+.js-fh5co-waypoint {
+    position: relative;
+}

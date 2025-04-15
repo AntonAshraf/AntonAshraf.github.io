@@ -37,6 +37,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/css/smart-header.css">
 
 	<!-- Custom CSS for page width control and scroll-to-top button -->
 	<style>
@@ -44,14 +45,7 @@
 			width: 100%;
 			max-width: 100%;
 			overflow-x: hidden;
-		}
-        #fh5co-nav {
-			position: fixed;
-			top: 0;
-			width: 100%;
-			z-index: 1000;
-			background-color: #222;
-		}
+			}
 		
 		@keyframes jump {
 			0%, 100% {
@@ -109,7 +103,7 @@
 	<script src="js/data-loader.js"></script>
 </head>
 
-<body>
+<body class="has-smart-header">
 	<!-- Loader -->
 	<div class="fh5co-loader"></div>
 	
@@ -361,6 +355,9 @@
 			});
 		});
 	</script>
+	
+	<!-- Smart header script -->
+	<script src="js/smart-header.js"></script>
 </body>
 </html>
 
