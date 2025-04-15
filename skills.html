@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -9,15 +10,15 @@
 	<meta name="keywords" content="Anton Ashraf, skills, technologies, programming languages, frameworks, tools, databases" />
 	<meta name="author" content="Anton Ashraf" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- Place favicon.ico and apple-touch-icon.webp in the root directory -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-	
+
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Font Awesome for icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/flexslider.css">
@@ -31,10 +32,10 @@
 	<!-- jQuery Cookie -->
 	<script src="js/jquery.cookie.js"></script>
 	<script>
-	// Set dark mode as default
-	$('html, body').css('background', '#222222');
+		// Set dark mode as default
+		$('html, body').css('background', '#222222');
 	</script>
-	
+
 	<!-- Other JS -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -44,15 +45,52 @@
 	<script src="js/theme-handler.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+
+	<style>
+		#fh5co-nav {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+			background-color: #222;
+		}
+
+		@keyframes jump {
+			0%,
+			100% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-10px);
+			}
+		}
+
+		.scroll-to-top {
+			position: fixed;
+			bottom: 30px;
+			right: 30px;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			text-align: center;
+			line-height: 50px;
+			font-size: 20px;
+			cursor: pointer;
+			z-index: 9999;
+			display: none;
+			transition: all 0.3s ease;
+			animation: jump 1.5s infinite;
+		}
+	</style>
 </head>
+
 <body>
 	<!-- Loader -->
 	<div class="fh5co-loader"></div>
-	
+
 	<div id="fh5co-page">
 		<nav id="fh5co-nav" role="navigation">
 			<ul>
@@ -63,153 +101,153 @@
 				<li class="animate-box"><a href="resume.html" class="transition">Resume</a></li>
 			</ul>
 		</nav>
-		
+
 		<section class="skills">
 			<div class="container">
 				<h1 class="section-title">Skills & Technologies</h1>
-				
+
 				<div class="skills-container">
 					<div class="skills-category">
 						<h2>Programming Languages</h2>
 						<div class="skills-list">
 							<div class="skill-item" data-tooltip="Python">
-								<img src="assets/images/skills/python.png" alt="Python">
+								<img src="assets/images/skills/python.webp" alt="Python">
 								<span class="skill-name">Python</span>
 							</div>
 							<div class="skill-item" data-tooltip="Java">
-								<img src="assets/images/skills/java.png" alt="Java">
+								<img src="assets/images/skills/java.webp" alt="Java">
 								<span class="skill-name">Java</span>
 							</div>
 							<div class="skill-item" data-tooltip="C#">
-								<img src="assets/images/skills/csharp.png" alt="Csharp">
+								<img src="assets/images/skills/csharp.webp" alt="Csharp">
 								<span class="skill-name">Csharp</span>
 							</div>
 							<div class="skill-item" data-tooltip="C">
-								<img src="assets/images/skills/C.png" alt="C">
+								<img src="assets/images/skills/C.webp" alt="C">
 								<span class="skill-name">C</span>
 							</div>
-                            <div class="skill-item" data-tooltip="C++">
-								<img src="assets/images/skills/cpp.png" alt="C++">
+							<div class="skill-item" data-tooltip="C++">
+								<img src="assets/images/skills/cpp.webp" alt="C++">
 								<span class="skill-name">C++</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Bash">
-								<img src="assets/images/skills/bash.png" alt="Bash">
+							<div class="skill-item" data-tooltip="Bash">
+								<img src="assets/images/skills/bash.webp" alt="Bash">
 								<span class="skill-name">Bash</span>
 							</div>
-                            <div class="skill-item" data-tooltip="HTML">
-								<img src="assets/images/skills/html.png" alt="HTML">
+							<div class="skill-item" data-tooltip="HTML">
+								<img src="assets/images/skills/html.webp" alt="HTML">
 								<span class="skill-name">HTML</span>
 							</div>
-                            <div class="skill-item" data-tooltip="CSS">
-								<img src="assets/images/skills/css.png" alt="CSS">
+							<div class="skill-item" data-tooltip="CSS">
+								<img src="assets/images/skills/css.webp" alt="CSS">
 								<span class="skill-name">CSS</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Dart">
-								<img src="assets/images/skills/dart.png" alt="Dart">
+							<div class="skill-item" data-tooltip="Dart">
+								<img src="assets/images/skills/dart.webp" alt="Dart">
 								<span class="skill-name">Dart</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Arduino">
-								<img src="assets/images/skills/arduino.png" alt="Arduino">
+							<div class="skill-item" data-tooltip="Arduino">
+								<img src="assets/images/skills/arduino.webp" alt="Arduino">
 								<span class="skill-name">Arduino</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Assembly">
-                                <img src="assets/images/skills/assembly.png" alt="Assembly">
-                                <span class="skill-name">Assembly</span>
-                            </div>
+							<div class="skill-item" data-tooltip="Assembly">
+								<img src="assets/images/skills/assembly.webp" alt="Assembly">
+								<span class="skill-name">Assembly</span>
+							</div>
 						</div>
 					</div>
-					
+
 					<div class="skills-category">
 						<h2>Frameworks & Libraries</h2>
 						<div class="skills-list">
 							<div class="skill-item" data-tooltip="Django">
-								<img src="assets/images/skills/django.png" alt="Django">
+								<img src="assets/images/skills/django.webp" alt="Django">
 								<span class="skill-name">Django</span>
 							</div>
 							<div class="skill-item" data-tooltip="Unity">
-								<img src="assets/images/skills/unity.png" alt="Unity">
+								<img src="assets/images/skills/unity.webp" alt="Unity">
 								<span class="skill-name">Unity</span>
 							</div>
 							<div class="skill-item" data-tooltip="Flask">
-								<img src="assets/images/skills/flask.png" alt="Flask">
+								<img src="assets/images/skills/flask.webp" alt="Flask">
 								<span class="skill-name">Flask</span>
 							</div>
 							<div class="skill-item" data-tooltip="OpenCV">
-								<img src="assets/images/skills/opencv.png" alt="OpenCV">
+								<img src="assets/images/skills/opencv.webp" alt="OpenCV">
 								<span class="skill-name">OpenCV</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Flutter">
-								<img src="assets/images/skills/flutter.png" alt="Flutter">
+							<div class="skill-item" data-tooltip="Flutter">
+								<img src="assets/images/skills/flutter.webp" alt="Flutter">
 								<span class="skill-name">Flutter</span>
 							</div>
-                            <div class="skill-item" data-tooltip="GraphQL">
-								<img src="assets/images/skills/graphql.png" alt="GraphQL">
-								<span class="skill-name">GraphQL"></span>
+							<div class="skill-item" data-tooltip="GraphQL">
+								<img src="assets/images/skills/graphql.webp" alt="GraphQL">
+								<span class="skill-name">GraphQL</span>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="skills-category">
 						<h2>DevOps & Cloud</h2>
 						<div class="skills-list">
 							<div class="skill-item" data-tooltip="Docker">
-								<img src="assets/images/skills/docker.png" alt="Docker">
+								<img src="assets/images/skills/docker.webp" alt="Docker">
 								<span class="skill-name">Docker</span>
 							</div>
 							<div class="skill-item" data-tooltip="GitHub Actions">
-								<img src="assets/images/skills/githubactions.png" alt="GitHub Actions">
+								<img src="assets/images/skills/githubactions.webp" alt="GitHub Actions">
 								<span class="skill-name">GitHub Actions</span>
 							</div>
 							<div class="skill-item" data-tooltip="Git">
-								<img src="assets/images/skills/git.png" alt="Git">
+								<img src="assets/images/skills/git.webp" alt="Git">
 								<span class="skill-name">Git</span>
 							</div>
 							<div class="skill-item" data-tooltip="AWS">
-								<img src="assets/images/skills/aws.png" alt="AWS">
+								<img src="assets/images/skills/aws.webp" alt="AWS">
 								<span class="skill-name">AWS</span>
 							</div>
 							<div class="skill-item" data-tooltip="Jenkins">
-								<img src="assets/images/skills/jenkins.png" alt="Jenkins">
+								<img src="assets/images/skills/jenkins.webp" alt="Jenkins">
 								<span class="skill-name">Jenkins</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Ansible">
-								<img src="assets/images/skills/ansible.png" alt="Ansible">
+							<div class="skill-item" data-tooltip="Ansible">
+								<img src="assets/images/skills/ansible.webp" alt="Ansible">
 								<span class="skill-name">Ansible</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Digital Ocean">
-								<img src="assets/images/skills/digitalocean.png" alt="Digital Ocean">
-								<span class="skill-name">Digital Ocean"></span>
+							<div class="skill-item" data-tooltip="Digital Ocean">
+								<img src="assets/images/skills/digitalocean.webp" alt="Digital Ocean">
+								<span class="skill-name">Digital Ocean</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Firebase">
-								<img src="assets/images/skills/firebase.png" alt="Firebase">
-								<span class="skill-name">Firebase"></span>
+							<div class="skill-item" data-tooltip="Firebase">
+								<img src="assets/images/skills/firebase.webp" alt="Firebase">
+								<span class="skill-name">Firebase</span>
 							</div>
-                            <div class="skill-item" data-tooltip="Jira">
-								<img src="assets/images/skills/jira.png" alt="Jira">
-								<span class="skill-name">Jira"></span>
+							<div class="skill-item" data-tooltip="Jira">
+								<img src="assets/images/skills/jira.webp" alt="Jira">
+								<span class="skill-name">Jira</span>
 							</div>
-                            
+
 						</div>
 					</div>
-					
+
 					<div class="skills-category">
 						<h2>Databases</h2>
 						<div class="skills-list">
 							<div class="skill-item" data-tooltip="MySQL">
-								<img src="assets/images/skills/mysql.png" alt="MySQL">
+								<img src="assets/images/skills/mysql.webp" alt="MySQL">
 								<span class="skill-name">MySQL</span>
 							</div>
 							<div class="skill-item" data-tooltip="DynamoDB">
-								<img src="assets/images/skills/DynamoDB.png" alt="DynamoDB">
-								<span class="skill-name">DynamoDB"></span>
+								<img src="assets/images/skills/DynamoDB.webp" alt="DynamoDB">
+								<span class="skill-name">DynamoDB</span>
 							</div>
 							<div class="skill-item" data-tooltip="SQLlite">
-								<img src="assets/images/skills/sqllite.png" alt="SQLlite">
-								<span class="skill-name">SQLlite"></span>
+								<img src="assets/images/skills/sqllite.webp" alt="SQLlite">
+								<span class="skill-name">SQLlite</span>
 							</div>
 							<div class="skill-item" data-tooltip="Firestore">
-								<img src="assets/images/skills/firestore.png" alt="Firestore">
-								<span class="skill-name">Firestore"></span>
+								<img src="assets/images/skills/firestore.webp" alt="Firestore">
+								<span class="skill-name">Firestore</span>
 							</div>
 						</div>
 					</div>
@@ -222,27 +260,53 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<p><small>&copy; 2025 Anton Ashraf. All Rights Reserved.</small> </p>
-                        <ul class="fh5co-social">
-                            <li>
-                                <a href="mailto:anton0ashraf@gmail.com" target="_blank"><i class="icon-mail2"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/Anton-Ashraf/" target="_blank"><i class="icon-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/anton.ashraf.12" target="_blank"><i class="icon-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/AntonAshraf" target="_blank"><i class="icon-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.github.com/AntonAshraf" target="_blank"><i class="icon-github"></i></a>
-                            </li>
-                        </ul>
+						<ul class="fh5co-social">
+							<li>
+								<a href="mailto:anton0ashraf@gmail.com" target="_blank"><i class="icon-mail2"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/Anton-Ashraf/" target="_blank"><i class="icon-linkedin"></i></a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/anton.ashraf.12" target="_blank"><i class="icon-facebook"></i></a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/AntonAshraf" target="_blank"><i class="icon-instagram"></i></a>
+							</li>
+							<li>
+								<a href="https://www.github.com/AntonAshraf" target="_blank"><i class="icon-github"></i></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<!-- Scroll to top button -->
+		<div class="scroll-to-top">
+			<i class="icon-chevron-up"></i>
+		</div>
 	</div>
+
+	<!-- Scroll to top functionality -->
+	<script>
+		$(document).ready(function () {
+			// Show/hide scroll-to-top button based on scroll position
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 300) {
+					$('.scroll-to-top').fadeIn();
+				} else {
+					$('.scroll-to-top').fadeOut();
+				}
+			});
+
+			// Smooth scroll to top when button is clicked
+			$('.scroll-to-top').click(function () {
+				$('html, body').animate({ scrollTop: 0 }, 800);
+				return false;
+			});
+		});
+	</script>
 </body>
+
 </html>

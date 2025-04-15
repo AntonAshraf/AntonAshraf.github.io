@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
-	<head>
+<html lang="en">
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Anton Ashraf</title>
@@ -45,6 +45,22 @@
 			max-width: 100%;
 			overflow-x: hidden;
 		}
+        #fh5co-nav {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+			background-color: #222;
+		}
+		
+		@keyframes jump {
+			0%, 100% {
+				transform: translateY(0);
+			}
+			50% {
+				transform: translateY(-10px);
+			}
+		}
 		
 		.scroll-to-top {
 			position: fixed;
@@ -62,10 +78,7 @@
 			z-index: 9999;
 			display: none;
 			transition: all 0.3s ease;
-		}
-		
-		.scroll-to-top:hover {
-			background-color: rgba(0, 0, 0, 0.8);
+			animation: jump 1.5s infinite;
 		}
 	</style>
 
@@ -94,33 +107,9 @@
 
 	<!-- Custom data loader -->
 	<script src="js/data-loader.js"></script>
-	
-	<!-- Scroll to top script -->
-	<script>
-		$(document).ready(function(){
-			// Show/hide scroll-to-top button based on scroll position
-			$(window).scroll(function(){
-				if($(this).scrollTop() > 300){
-					$('.scroll-to-top').fadeIn();
-				} else {
-					$('.scroll-to-top').fadeOut();
-				}
-			});
-			
-			// Smooth scroll to top when button is clicked
-			$('.scroll-to-top').click(function(){
-				$('html, body').animate({scrollTop: 0}, 800);
-				return false;
-			});
-		});
-	</script>
+</head>
 
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	</head>
-
-	<body>
+<body>
 	<!-- Loader -->
 	<div class="fh5co-loader"></div>
 	
@@ -152,8 +141,6 @@
 			</div>
 		</header>
 		
-
-
 		<!-- PROJECT SECTION 2: RobEn Club Website -->
 		<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
 			<div class="container">
@@ -208,8 +195,8 @@
 			</div>
 		</div>
 
-		 <!-- PROJECT SECTION 1: AI Virtual Assistant -->
-         <div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
+		<!-- PROJECT SECTION 1: AI Virtual Assistant -->
+        <div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
 			<div class="container">
 				<div class="fh5co-project-inner row">
 					<div class="fh5co-imgs col-md-8 animate-box">
@@ -225,19 +212,20 @@
 				</div>
 			</div>
 		</div>
+		
 		<!-- CERTIFICATIONS SECTION -->
-		<div class=" js-fh5co-waypoint fh5co-reverse" data-colorbg="">
+		<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="">
 			<div class="container">
 				<div class="fh5co-project-inner row">
-					<div class="col-md-12 text-center animate-box">"home-certifications-container">
-						<h2>Certifications</h2>Loading certifications...</div>
+					<div class="col-md-12 text-center animate-box">
+						<h2>Certifications</h2>
 						<p>Professional certifications that validate my expertise</p>
-					</div>ss="col-md-12 text-center">
+					</div>
 					<div class="col-md-12 animate-box">
 						<div class="certs-highlight">
                             <div class="cert-preview-card">
                                 <div class="cert-preview-image">
-                                    <img src="assets\images\certs\Mate2024.png" alt="MATE 2025">
+                                    <img src="assets\images\certs\Mate2024.webp" alt="MATE 2024">
                                 </div>
                                 <div class="cert-preview-info">
                                     <h3>MATE 2024</h3>
@@ -248,7 +236,7 @@
                             
                             <div class="cert-preview-card">
                                 <div class="cert-preview-image">
-                                    <img src="assets\images\certs\AWS cerified Cloud Practitioner.png" alt="AWS Certified Cloud Practitioner">
+                                    <img src="assets\images\certs\AWS cerified Cloud Practitioner.webp" alt="AWS Certified Cloud Practitioner">
                                 </div>
                                 <div class="cert-preview-info">
                                     <h3>Certified AWS Cloud Practitioner</h3>
@@ -259,14 +247,13 @@
                             
                             <div class="cert-preview-card">
                                 <div class="cert-preview-image">
-                                    <img src="assets\images\certs\UAV2024.png" alt="UAV">
+                                    <img src="assets\images\certs\UAV2024.webp" alt="UAV">
                                 </div>
                                 <div class="cert-preview-info">
                                     <h3>UAV 2024</h3>
                                     <span class="category-tag">Computer Vision</span>
                                 </div>
                             </div>
-							
 						</div>
 						<div class="col-md-12 text-center">
 							<p><a href="certifications.html" class="btn btn-primary btn-outline transition">View All Certifications</a></p>
@@ -275,7 +262,6 @@
 				</div>
 			</div>
 		</div>
-
 
 		<!-- WHAT MAKES ME SPECIAL SECTION -->
 		<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="">
@@ -355,6 +341,26 @@
 			<i class="icon-chevron-up"></i>
 		</div>
 	</div>
-	</body>
+	
+	<!-- Scroll to top functionality -->
+	<script>
+		$(document).ready(function(){
+			// Show/hide scroll-to-top button based on scroll position
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 300){
+					$('.scroll-to-top').fadeIn();
+				} else {
+					$('.scroll-to-top').fadeOut();
+				}
+			});
+			
+			// Smooth scroll to top when button is clicked
+			$('.scroll-to-top').click(function(){
+				$('html, body').animate({scrollTop: 0}, 800);
+				return false;
+			});
+		});
+	</script>
+</body>
 </html>
 

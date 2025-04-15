@@ -190,4 +190,22 @@ $(document).ready(function() {
 		window.location = linkLocation;
 	}
 	
+    // Initially hide the button
+    $('.scroll-to-top').hide();
+    
+    // Show only when scrolled down
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 300){
+            $('.scroll-to-top').fadeIn();
+        } else {
+            $('.scroll-to-top').fadeOut();
+        }
+    });
+    
+    // Smooth scroll to top when clicked
+    $('.scroll-to-top').click(function(){
+        $('html, body').animate({scrollTop: 0}, 800);
+        return false;
+    });
+	
 });

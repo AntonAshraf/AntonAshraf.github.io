@@ -9,7 +9,7 @@
 	<meta name="keywords" content="Anton Ashraf, certifications, AWS, TensorFlow, Kubernetes, professional development" />
 	<meta name="author" content="Anton Ashraf" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- Place favicon.ico and apple-touch-icon.webp in the root directory -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -43,27 +43,33 @@
 	
 	<!-- Custom CSS for scroll-to-top button and certificate counter -->
 	<style>
-		.scroll-to-top {
-			position: fixed;
-			bottom: 30px;
-			right: 30px;
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			background-color: rgba(0, 0, 0, 0.5);
-			color: #fff;
-			text-align: center;
-			line-height: 50px;
-			font-size: 20px;
-			cursor: pointer;
-			z-index: 9999;
-			display: none;
-			transition: all 0.3s ease;
-		}
-		
-		.scroll-to-top:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-			}
+        @keyframes jump {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 9999;
+            display: block;
+            transition: all 0.3s ease;
+            animation: jump 1.5s infinite;
+        }
 		
 		.cert-counter {
 			margin: 20px 0;
@@ -77,6 +83,14 @@
 		.cert-counter .count {
 			font-weight: 700;
 			color: #0070f3;
+		}
+
+		#fh5co-nav {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+			background-color: #222;
 		}
 	</style>
 	
@@ -142,7 +156,7 @@
 
                     <div class="cert-card" data-category="DevOps">
 						<div class="cert-image">
-							<img src="assets\images\certs\AWS cerified Cloud Practitioner.png" alt="AWS cerified Cloud Practitioner">
+							<img src="assets\images\certs\AWS cerified Cloud Practitioner.webp" alt="AWS cerified Cloud Practitioner">
 						</div>
 						<div class="cert-info">
 							<h3>AWS cerified Cloud Practitioner</h3>
@@ -157,7 +171,7 @@
 					
                     <div class="cert-card" data-category="RobEn">
 						<div class="cert-image">
-							<img src="assets\images\certs\UAV2024.png" alt="UAV 2024">
+							<img src="assets\images\certs\UAV2024.webp" alt="UAV 2024">
 						</div>
 						<div class="cert-info">
 							<h3>UAV 2024 Competition</h3>
@@ -170,7 +184,7 @@
 
                     <div class="cert-card" data-category="RobEn">
                         <div class="cert-image">
-                            <img src="assets\images\certs\Mate2024.png" alt="Mate 2024">
+                            <img src="assets\images\certs\Mate2024.webp" alt="Mate 2024">
                         </div>
                         <div class="cert-info">
                             <h3>MATE ROV Competition</h3>
@@ -183,7 +197,7 @@
 
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\OpenSource-ITI.png" alt="Open Source Development 120hrs">
+							<img src="assets\images\certs\OpenSource-ITI.webp" alt="Open Source Development 120hrs">
 						</div>
 						<div class="cert-info">
 							<h3>Open Source Development 120hrs</h3>
@@ -196,7 +210,7 @@
 
                     <div class="cert-card" data-category="DevOps">
                         <div class="cert-image">
-                            <img src="assets\images\certs\CloudComputing_NTI.png" alt="Cloud Computing 70hrs Training">
+                            <img src="assets\images\certs\CloudComputing_NTI.webp" alt="Cloud Computing 70hrs Training">
                         </div>
                         <div class="cert-info">
                             <h3>Cloud Computing 70hrs Training</h3>
@@ -209,7 +223,7 @@
 
                     <div class="cert-card" data-category="Problem solving">
 						<div class="cert-image">
-							<img src="assets/images/certs/ECPC2021.png" alt="ECPC 2021">
+							<img src="assets/images/certs/ECPC2021.webp" alt="ECPC 2021">
 						</div>
 						<div class="cert-info">
 							<h3>13th Place @ ECPC</h3>
@@ -222,7 +236,7 @@
 
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\CanSAT.png" alt="Applied Remote Sensing & GIS in Engineering Field For Sustainable Development">
+							<img src="assets\images\certs\CanSAT.webp" alt="Applied Remote Sensing & GIS in Engineering Field For Sustainable Development">
 						</div>
 						<div class="cert-info">
 							<h3>Applied Remote Sensing & GIS in Engineering Field For Sustainable Development</h3>
@@ -235,7 +249,7 @@
 
                     <div class="cert-card" data-category="AI/ML">
 						<div class="cert-image">
-							<img src="assets\images\certs\Fundamentals of Deep Learning.png" alt="Fundamentals of Deep Learning">
+							<img src="assets\images\certs\Fundamentals of Deep Learning.webp" alt="Fundamentals of Deep Learning">
 						</div>
 						<div class="cert-info">
 							<h3>Fundamentals of Deep Learning</h3>
@@ -248,7 +262,7 @@
 
                     <div class="cert-card" data-category="RobEn">
 						<div class="cert-image">
-							<img src="assets\images\certs\UAV2022.png" alt="UAV 2024">
+							<img src="assets\images\certs\UAV2022.webp" alt="UAV 2024">
 						</div>
 						<div class="cert-info">
 							<h3>UAV 2022 Competition</h3>
@@ -261,7 +275,7 @@
 
                     <div class="cert-card" data-category="RobEn">
 						<div class="cert-image">
-							<img src="assets\images\certs\Mate2023.png" alt="Mate 2023">
+							<img src="assets\images\certs\Mate2023.webp" alt="Mate 2023">
 						</div>
 						<div class="cert-info">
 							<h3>MATE ROV Competition</h3>
@@ -273,7 +287,7 @@
 					</div>
                     <div class="cert-card" data-category="RobEn">
 						<div class="cert-image">
-							<img src="assets\images\certs\MATE2022.png" alt="Mate 2022">
+							<img src="assets\images\certs\MATE2022.webp" alt="Mate 2022">
 						</div>
 						<div class="cert-info">
 							<h3>MATE ROV Competition</h3>
@@ -286,7 +300,7 @@
                     
                     <div class="cert-card" data-category="DevOps">
 						<div class="cert-image">
-							<img src="assets\images\certs\HCIA-Cloud Computing V5.5 Course.png" alt="HClA-CIoud Computing V5.5 Course">
+							<img src="assets\images\certs\HCIA-Cloud Computing V5.5 Course.webp" alt="HClA-CIoud Computing V5.5 Course">
 						</div>
 						<div class="cert-info">
 							<h3>HClA-CIoud Computing V5.5 Course</h3>
@@ -299,7 +313,7 @@
 
                     <div class="cert-card" data-category="Problem solving">
 						<div class="cert-image">
-							<img src="assets\images\certs\ACPC_Trainer.png" alt="ACPC Trainer">
+							<img src="assets\images\certs\ACPC_Trainer.webp" alt="ACPC Trainer">
 						</div>
 						<div class="cert-info">
 							<h3>ACPC Trainer</h3>
@@ -312,7 +326,7 @@
 
                     <div class="cert-card" data-category="DevOps">
 						<div class="cert-image">
-							<img src="assets\images\certs\IBM3c.png" alt="IBM">
+							<img src="assets\images\certs\IBM3c.webp" alt="IBM">
 						</div>
 						<div class="cert-info">
 							<h3>DevOps Foundation</h3>
@@ -325,7 +339,7 @@
 
                     <div class="cert-card" data-category="DevOps">
 						<div class="cert-image">
-							<img src="assets\images\certs\linux&shell.png" alt="Linux">
+							<img src="assets\images\certs\linux&shell.webp" alt="Linux">
 						</div>
 						<div class="cert-info">
 							<h3>Hands-on Introduction to Linux Commands and Shell Scripting</h3>
@@ -337,7 +351,7 @@
 					</div>
                     <div class="cert-card" data-category="Security">
 						<div class="cert-image">
-							<img src="assets\images\certs\Computer Network Fundamentals.png" alt="Computer Network Fundamentals">
+							<img src="assets\images\certs\Computer Network Fundamentals.webp" alt="Computer Network Fundamentals">
 						</div>
 						<div class="cert-info">
 							<h3>Computer Network Fundamentals</h3>
@@ -350,7 +364,7 @@
                         
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\introduction to software testing.png" alt=" Introduction to Software Testing">
+							<img src="assets\images\certs\introduction to software testing.webp" alt=" Introduction to Software Testing">
 						</div>
 						<div class="cert-info">
 							<h3> Introduction to Software Testing</h3>
@@ -363,7 +377,7 @@
                           
                     <div class="cert-card" data-category="Security">
 						<div class="cert-image">
-							<img src="assets\images\certs\mh-networkSecurity.png" alt="Introduction to network security">
+							<img src="assets\images\certs\mh-networkSecurity.webp" alt="Introduction to network security">
 						</div>
 						<div class="cert-info">
 							<h3>Introduction to network security</h3>
@@ -376,7 +390,7 @@
 
                     <div class="cert-card" data-category="Security">
 						<div class="cert-image">
-							<img src="assets\images\certs\Information Security Awareness.png" alt="Information Security Awareness">
+							<img src="assets\images\certs\Information Security Awareness.webp" alt="Information Security Awareness">
 						</div>
 						<div class="cert-info">
 							<h3>Information Security Awareness</h3>
@@ -389,7 +403,7 @@
 
                     <div class="cert-card" data-category="Security">
 						<div class="cert-image">
-							<img src="assets\images\certs\CyberSecurity-ITI.png" alt="Cyber Security 120hrs">
+							<img src="assets\images\certs\CyberSecurity-ITI.webp" alt="Cyber Security 120hrs">
 						</div>
 						<div class="cert-info">
 							<h3>Cyber Security 120hrs</h3>
@@ -402,7 +416,7 @@
 
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\IEEE-CS.png" alt="IEEE-CS">
+							<img src="assets\images\certs\IEEE-CS.webp" alt="IEEE-CS">
 						</div>
 						<div class="cert-info">
 							<h3>Member in Coumputer Society</h3>
@@ -415,7 +429,7 @@
 
                     <div class="cert-card" data-category="Problem solving">
 						<div class="cert-image">
-							<img src="assets\images\certs\IEEEXTREME2022.png" alt="IEEEXTREME 2022">
+							<img src="assets\images\certs\IEEEXTREME2022.webp" alt="IEEEXTREME 2022">
 						</div>
 						<div class="cert-info">
 							<h3>IEEEXTREME 2022</h3>
@@ -428,7 +442,7 @@
 
                     <div class="cert-card" data-category="Problem solving">
 						<div class="cert-image">
-							<img src="assets\images\certs\IEEEXTREME2023.png" alt="IEEEXTREME 2023">
+							<img src="assets\images\certs\IEEEXTREME2023.webp" alt="IEEEXTREME 2023">
 						</div>
 						<div class="cert-info">
 							<h3>IEEEXTREME 2023</h3>
@@ -441,7 +455,7 @@
 
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\Qayedny.jpg" alt="Qayedny">
+							<img src="assets\images\certs\Qayedny.webp" alt="Qayedny">
 						</div>
 						<div class="cert-info">
 							<h3>Flutter developer</h3>
@@ -454,7 +468,7 @@
 
                     <div class="cert-card" data-category="AI/ML">
 						<div class="cert-image">
-							<img src="assets\images\certs\IBM-AI.png" alt="IBM AI">
+							<img src="assets\images\certs\IBM-AI.webp" alt="IBM AI">
 						</div>
 						<div class="cert-info">
 							<h3>Python for Data Science, AI & Development</h3>
@@ -467,7 +481,7 @@
 
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\SolarPV-ongrid.png" alt="Solar PV On-grid">
+							<img src="assets\images\certs\SolarPV-ongrid.webp" alt="Solar PV On-grid">
 						</div>
 						<div class="cert-info">
 							<h3>Solar PV On-grid</h3>
@@ -480,7 +494,7 @@
 
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\Shorooq partners.png" alt="Venture Capital Case Competition">
+							<img src="assets\images\certs\Shorooq partners.webp" alt="Venture Capital Case Competition">
 						</div>
 						<div class="cert-info">
 							<h3>Venture Capital Case Competition</h3>
@@ -493,7 +507,7 @@
 
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\Meta.png" alt="What is Metaverse?">
+							<img src="assets\images\certs\Meta.webp" alt="What is Metaverse?">
 						</div>
 						<div class="cert-info">
 							<h3>What is Metaverse?</h3>
@@ -506,7 +520,7 @@
 
                     <div class="cert-card" data-category="Other">
 						<div class="cert-image">
-							<img src="assets\images\certs\Udacity-Web.png" alt="Udacity Web Development">
+							<img src="assets\images\certs\Udacity-Web.webp" alt="Udacity Web Development">
 						</div>
 						<div class="cert-info">
 							<h3>WEB DEVELOPMENT CHALLENGER TRACK</h3>
@@ -519,7 +533,7 @@
 
                     <div class="cert-card" data-category="DevOps">
                         <div class="cert-image">
-                            <img src="assets\images\certs\Git&GitHub.png" alt="Git & GitHub">
+                            <img src="assets\images\certs\Git&GitHub.webp" alt="Git & GitHub">
                         </div>
                         <div class="cert-info">
                             <h3>Git & GitHub</h3>
@@ -532,7 +546,7 @@
 
                     <div class="cert-card" data-category="Other">
                         <div class="cert-image">
-                            <img src="assets\images\certs\IEEE-bestmember.jpg" alt="IEEE Best member">
+                            <img src="assets\images\certs\IEEE-bestmember.webp" alt="IEEE Best member">
                         </div>
                         <div class="cert-info">
                             <h3>IEEE Best Member</h3>
@@ -544,7 +558,7 @@
 
                     <div class="cert-card" data-category="Other">
                         <div class="cert-image">
-                            <img src="assets\images\certs\NAID-MixedReality.jpg" alt="NAID Mixed Reality">
+                            <img src="assets\images\certs\NAID-MixedReality.webp" alt="NAID Mixed Reality">
                         </div>
                         <div class="cert-info">
                             <h3>Mixed Reality 64hrs</h3>
@@ -557,7 +571,7 @@
 
                     <div class="cert-card" data-category="Problem solving">
 						<div class="cert-image">
-							<img src="assets\images\certs\IEEEXTREME23.jpg" alt="IEEEXTREME onsite 2023">
+							<img src="assets\images\certs\IEEEXTREME23.webp" alt="IEEEXTREME onsite 2023">
 						</div>
 						<div class="cert-info">
 							<h3>IEEEXTREME Onsite Certficate</h3>
@@ -565,6 +579,19 @@
 							<p class="date">10-2023</p>
 							<span class="category-tag">Problem solving</span>
 							<a href="https://drive.google.com/file/d/1BmuXe2SQzHtgiJG4D7i21CEAfGhiugF-/view" target="_blank" class="view-cert-btn">View Certificate</a>
+						</div>
+					</div>
+
+                    <div class="cert-card" data-category="Other">
+						<div class="cert-image">
+							<img src="assets\images\certs\1mac.webp" alt="IEEEXTREME onsite 2023">
+						</div>
+						<div class="cert-info">
+							<h3>Full Stack Development Track</h3>
+							<p class="issuer">Udacity</p>
+							<p class="date">05-2019</p>
+							<span class="category-tag">Full Stack</span>
+							<a href="https://drive.google.com/file/d/1caXjnGPnGipftsrwxNehpS4SJxcCyh2Y/view" target="_blank" class="view-cert-btn">View Certificate</a>
 						</div>
 					</div>
 
@@ -613,8 +640,8 @@
 			const certCards = document.querySelectorAll('.cert-card');
 			const certCounter = document.querySelector('.cert-counter .count');
 			
-			// Initial count update
-			updateCertificateCount();
+			 // Set initial count
+			certCounter.textContent = certCards.length;
 			
 			filterButtons.forEach(button => {
 				button.addEventListener('click', () => {
@@ -639,17 +666,6 @@
 					certCounter.textContent = visibleCount;
 				});
 			});
-			
-			// Function to update certificate count
-			function updateCertificateCount() {
-				let visibleCount = 0;
-				certCards.forEach(card => {
-					if (card.style.display !== 'none') {
-						visibleCount++;
-					}
-				});
-				certCounter.textContent = certCards.length; // Initially show all certificates
-			}
 		});
 	</script>
 </body>
